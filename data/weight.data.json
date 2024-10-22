@@ -1,0 +1,24 @@
+{
+    "weights":[
+        {
+        "email":"fengxj@gmail.com",
+        "date": "10/19/2024",
+        "weight": 120
+        },
+
+        {
+            "email":"fengxj@gmail.com",
+            "date": "10/20/2024",
+            "weight": 121
+        },
+
+        {
+            "email":"fengxj@gmail.com",
+            "date": "10/18/2024",
+            "weight": 119
+        }
+
+       
+
+    ]
+}

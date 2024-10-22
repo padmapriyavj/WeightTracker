@@ -1,0 +1,24 @@
+{
+    "users":[
+        {
+        "firstName":"xj",
+        "lastName":"feng",
+        "gender": "female",
+        "age": "30",
+        "email": "fengxj@gmail.com",
+        "phone": "123456789",
+        "password": "abc"
+        },
+
+        {
+            "firstName":"John",
+            "lastName":"Simth",
+            "gender": "male",
+            "age": "30",
+            "email": "johnsmith@gmail.com",
+            "phone": "987654321",
+            "password": "abc123"
+        }
+
+    ]
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login Page</title>
+        <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color:blanchedalmond;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-container {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        h3 {
+            text-align: center;
+            display: block;
+            margin: 10px 0 8px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            align-self:center;
+            width: 50%;
+            padding: 10px;
+            background-color: darkcyan;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #007f7f;
+        }
+        .error {
+            color: red;
+            margin-bottom: 10px;
+        }
+
+        /* .button-container{
+            display: flex;
+            gap: 20px;
+        } */
+        .link-button{
+            align-self: midder;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="login-container">
+            <form action="/login" method="post">
+                <h3>Weight Tracker</h3>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+                <button class="button-container" type="submit" id="login">Login</button>
+                <!-- <button class = "button-container" type="submit" id="signup">Singup</button> -->
+                
+            </form>
+            <div>
+                <a href="signup" class="nav-button">New user? Signup Here</a>
+            </div>
+        </div>
+        
+        <!-- <script>
+            document.getElementById('singup').addEventListener('click',  (req, res) => {
+            res.render('./views/singup.ejs')
+        });
+        </script> -->
+    </body>
+</html>

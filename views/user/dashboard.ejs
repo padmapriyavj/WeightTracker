@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body{
+            background-color: blanchedalmond;
+        }
+        .container {
+            display: flex;
+        }
+
+        .box{
+            margin: 200px, 100px, 100px, 400px;
+            height: 400px
+        }
+        
+        .box1 {
+        background: darkcyan; 
+        width: 10%;
+        padding: 20px; 
+        border: 1px solid #ddd; 
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+        }
+
+        .box2 {
+        background: white; 
+        width: 40%;
+        padding: 20px; 
+        border: 1px solid #ddd; 
+       
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+        }
+
+        button{
+            padding: 8px;
+            background-color: darkcyan;
+        }
+    </style>
+
+<body>
+    <div class="container">
+    <div class="box box1">
+        <h3>Weight Tracker</h3>
+            <nav>
+                <form  action="/profile" method="get">
+                <label>Dashboard</label><br><br>
+                <button type="submit">Profile</button><br><br>
+                </form>
+                <form action="/logout" method="get">
+                <button type="submit">Logout</button>
+                </form>
+                
+            </nav>
+    </div>
+    <div class="box box2">
+        
+            <form action="/dashboard", method="post">
+            <h3>Welcome,<%= user.firstname %></h3>
+            <label>Your current weight:</label><br><br>
+            <label>Your target weight:</label><br><br>
+            <h3>Your weight progress</h3>
+            <progress id="weight" value="32" max="100">32 % </progress>
+            </form>
+    </div>  
+    </div>
+    
+</body>
+</html>
